@@ -1,0 +1,29 @@
+
+@import "../mixins/media";
+
+header {
+  width: 220Px;
+  background-color: red;
+
+  @include tablets {
+    width: 500px;
+  }
+}
+
+.maincontent {
+	// fill: transparent;
+	background: url("/assets/img/exmpl.png");
+	@include phones {
+		display: none;
+	}
+	font-family: ubuntu;
+}
+
+.parag {
+  font-size: 30px;
+  width: 300px;
+	margin-left: 50px;
+	@include phones {
+		display: none;
+	}
+}
